@@ -1,7 +1,7 @@
 import numpy as np 
 import pandas as pd
 
-data = pd.read_csv('CandidateElimination.csv')
+data = pd.read_csv('./CandidateElimination.csv')
 # separate into concepts and target, i.e. features and target
 concepts = np.array(data.iloc[:,0:-1])
 target = np.array(data.iloc[:,-1])
